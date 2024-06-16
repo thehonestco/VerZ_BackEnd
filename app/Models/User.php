@@ -17,18 +17,28 @@ class User extends Authenticatable
      * The attributes that are mass assignable.
      *
      * @var array<int, string>
-     */
+    */
     protected $fillable = [
-        'name',
-        'email',
-        'password',
+		'splcode',
+		'role_id',   
+		'name',
+		'email',
+		'email_verified_at',
+		'password',
+		'nickname',
+		'pharmacist_id_no',
+		'phone',
+		'dob',
+		'gender',  // 1 - Male, 2 - Female, 3 - Others
+		'address', 
+		'status'
     ];
 
     /**
      * The attributes that should be hidden for serialization.
      *
      * @var array<int, string>
-     */
+    */
     protected $hidden = [
         'password',
         'remember_token',
@@ -38,12 +48,12 @@ class User extends Authenticatable
      * Get the attributes that should be cast.
      *
      * @return array<string, string>
-     */
+    */
     protected function casts(): array
     {
         return [
             'email_verified_at' => 'datetime',
-            'password' => 'hashed',
+            'password'          => 'hashed',
         ];
     }
 
