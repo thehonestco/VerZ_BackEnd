@@ -17,7 +17,7 @@ class DatabaseSeeder extends Seeder
         // CREATE ROLES
 		Role::create(['name' => 'Super Admin']);
 		Role::create(['name' => 'Store Admin']);
-		Role::create(['name' => 'Customer Admin']);
+		Role::create(['name' => 'Customer']);
 		Role::create(['name' => 'Driver']);
 
 		// CREATE USERS
@@ -29,7 +29,7 @@ class DatabaseSeeder extends Seeder
 			'password' => '123456',
 			'role_id'  => '1'
         ]);
-		
+
 		User::factory()->create([
             'name'     => 'Store ADMIN',
 			'splcode'  =>uniqid(),
@@ -38,8 +38,8 @@ class DatabaseSeeder extends Seeder
 			'password' => '123456',
 			'role_id'  => '2'
         ]);
-		
-		
-		
+
+
+
     }
 }

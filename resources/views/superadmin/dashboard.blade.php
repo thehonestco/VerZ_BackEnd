@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.superadmin.app')
 
 @section('content')
 <div class="main-content-wrap">
@@ -114,10 +114,10 @@
                        <span class="icon-more"><i class="icon-more-horizontal"></i></span>
                     </button>
                     <ul class="dropdown-menu dropdown-menu-end">
-                        <li>  
+                        <li>
                             <a href="javascript:void(0);">This Week</a>
                         </li>
-                        <li>  
+                        <li>
                             <a href="javascript:void(0);">Last Week</a>
                         </li>
                     </ul>
@@ -135,10 +135,10 @@
                         <span class="view-all">View all<i class="icon-chevron-down"></i></span>
                     </button>
                     <ul class="dropdown-menu dropdown-menu-end">
-                        <li>  
+                        <li>
                             <a href="javascript:void(0);">3 days</a>
                         </li>
-                        <li>  
+                        <li>
                             <a href="javascript:void(0);">7 days</a>
                         </li>
                     </ul>
@@ -269,10 +269,10 @@
                         <span class="view-all">View all<i class="icon-chevron-down"></i></span>
                     </button>
                     <ul class="dropdown-menu dropdown-menu-end">
-                        <li>  
+                        <li>
                             <a href="javascript:void(0);">3 days</a>
                         </li>
-                        <li>  
+                        <li>
                             <a href="javascript:void(0);">7 days</a>
                         </li>
                     </ul>
@@ -373,10 +373,10 @@
                         <span class="view-all">View all<i class="icon-chevron-down"></i></span>
                     </button>
                     <ul class="dropdown-menu dropdown-menu-end">
-                        <li>  
+                        <li>
                             <a href="javascript:void(0);">3 days</a>
                         </li>
-                        <li>  
+                        <li>
                             <a href="javascript:void(0);">7 days</a>
                         </li>
                     </ul>
@@ -386,7 +386,7 @@
                 <ul class="table-title flex gap20 mb-14">
                     <li>
                         <div class="body-title">Shop</div>
-                    </li>    
+                    </li>
                     <li>
                         <div class="body-title">Categories</div>
                     </li>
@@ -544,10 +544,10 @@
                         <span class="view-all">View all<i class="icon-chevron-down"></i></span>
                     </button>
                     <ul class="dropdown-menu dropdown-menu-end">
-                        <li>  
+                        <li>
                             <a href="javascript:void(0);">3 days</a>
                         </li>
-                        <li>  
+                        <li>
                             <a href="javascript:void(0);">7 days</a>
                         </li>
                     </ul>
@@ -557,7 +557,7 @@
                 <ul class="table-title flex gap20 mb-14">
                     <li>
                         <div class="body-title">Name</div>
-                    </li>    
+                    </li>
                     <li>
                         <div class="body-title">Product ID</div>
                     </li>
@@ -696,10 +696,10 @@
                         <span class="icon-more"><i class="icon-more-horizontal"></i></span>
                     </button>
                     <ul class="dropdown-menu dropdown-menu-end">
-                        <li>  
+                        <li>
                             <a href="javascript:void(0);">This Week</a>
                         </li>
-                        <li>  
+                        <li>
                             <a href="javascript:void(0);">Last Week</a>
                         </li>
                     </ul>
@@ -709,7 +709,7 @@
                 <ul class="table-title flex gap10 mb-14">
                     <li>
                         <div class="body-title">Product</div>
-                    </li>    
+                    </li>
                     <li>
                         <div class="body-title">Price</div>
                     </li>
@@ -791,10 +791,10 @@
                        <span class="icon-more"><i class="icon-more-horizontal"></i></span>
                     </button>
                     <ul class="dropdown-menu dropdown-menu-end">
-                        <li>  
+                        <li>
                             <a href="javascript:void(0);">This Week</a>
                         </li>
-                        <li>  
+                        <li>
                             <a href="javascript:void(0);">Last Week</a>
                         </li>
                     </ul>
@@ -844,10 +844,10 @@
                        <span class="icon-more"><i class="icon-more-horizontal"></i></span>
                     </button>
                     <ul class="dropdown-menu dropdown-menu-end">
-                        <li>  
+                        <li>
                             <a href="javascript:void(0);">This Week</a>
                         </li>
-                        <li>  
+                        <li>
                             <a href="javascript:void(0);">Last Week</a>
                         </li>
                     </ul>
