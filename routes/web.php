@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\DashboardController as AdminDashboardController;
+use App\Http\Controllers\Admin\StoreController as AdminStoreController;
 use App\Http\Controllers\Store\DashboardController as StoreDashboardController;
 
 Route::get('/', function () {
@@ -14,8 +15,13 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 // Superadmin
 Route::middleware(['isSuperAdmin'])->group(function () {
+
+    // Dashboard
     Route::get('/superadmin/dashboard', [AdminDashboardController::class, 'index'])->name('superadmin.dashboard');
-    
+
+    // Store
+    Route::resource('/superadmin/store', AdminStoreController::class)->names('superadmin.store');
+
 });
 
 

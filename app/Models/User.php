@@ -20,7 +20,7 @@ class User extends Authenticatable
     */
     protected $fillable = [
 		'splcode',
-		'role_id',   
+		'role_id',
 		'name',
 		'email',
 		'email_verified_at',
@@ -30,7 +30,7 @@ class User extends Authenticatable
 		'phone',
 		'dob',
 		'gender',  // 1 - Male, 2 - Female, 3 - Others
-		'address', 
+		'address',
 		'status'
     ];
 
@@ -57,8 +57,8 @@ class User extends Authenticatable
         ];
     }
 
-    public function roles()
+    public function role()
     {
-        return $this->belongsToMany(Role::class);
+        return $this->belongsTo('App\Models\Role', 'id');
     }
 }

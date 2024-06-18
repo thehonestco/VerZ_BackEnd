@@ -9,12 +9,6 @@
             </div>
         </div>
         <div class="header-grid">
-            <div class="header-item country">
-                <select class="image-select no-text">
-                    <option data-thumbnail="images/country/1.png">ENG</option>
-                    <option data-thumbnail="images/country/9.png">VIE</option>
-                </select>
-            </div>
             <div class="header-item button-dark-light">
                 <i class="icon-moon"></i>
             </div>
@@ -104,7 +98,7 @@
                             </span>
                             <span class="flex flex-column">
                                 <span class="body-title mb-2">{{ Auth::user()->name }}</span>
-                                <span class="text-tiny text-capitalize">{{ Auth::user()->getRoleNames()->first() }}</span>
+                                <span class="text-tiny text-capitalize">{{ Auth::user()->role->name }}</span>
                             </span>
                         </span>
                     </button>
