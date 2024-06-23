@@ -34,8 +34,8 @@
 			</div>
 			<a class="tf-button style-1 w208" href="{{route('superadmin.store.create')}}"><i class="icon-file-text"></i>Add New Store</a>
 		</div>
-		<div class="wg-table table-all-category">
-			<ul class="table-title flex gap20 mb-14" style="min-width:100% !important;">
+		<div class="wg-table table-all-category border" >
+			<ul class="table-title flex gap20 mb-14 " style="min-width:100% !important;">
 				<li style="width:50px !important;">
 					<div class="body-title">#ID</div>
 				</li>
@@ -55,7 +55,7 @@
 					<div class="body-title">Action</div>
 				</li>
 			</ul>
-			<ul class="flex flex-column" style="min-width:100% !important;">
+			<ul class="flex flex-column " style="min-width:100% !important;">
 				@foreach($stores as $store)
 				<li class="product-item gap14" >
 					<div class="flex items-center justify-between gap20 flex-grow">
@@ -79,12 +79,14 @@
 							<div class="item edit">
 								<a title="Edit Item" href="{{route('superadmin.store.edit', $store->id)}}"><i class="icon-edit-3"></i></a>
 							</div>
-							<div class="item trash">
+							{{-- <div class="item trash">
 								<i class="icon-trash-2"></i>
-							</div>
+							</div> --}}
 						</div>
 					</div>
 				</li>
+				
+				<hr class="table-row-horiziontal-line" >
 				@endforeach
 
 				@if(count($stores) == 0 )

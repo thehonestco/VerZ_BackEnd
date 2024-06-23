@@ -6304,4 +6304,38 @@ select.h40 {
   }
 }
 
+.submit-button{
+  background-color: #f7812a !important;
+  border-color: #f7812a !important;
+  width:150px !important
+}
+.layout-wrap .section-content-right .main-content .main-content-inner{
+  padding:15px !important
+}
+.form-title{
+  font-size: 20px !important;
+  font-weight: 500 !important;
+}
+.body-title{
+  font-size: 15px !important;
+  font-weight: 400 !important;
+
+}
+.wg-table.table-all-category .product-item:nth-child(2n+1){
+  background-color: white !important;
+}
+.table-all-category{
+  border-radius: 12px !important;
+  border-width:2px !important
+}
+.table-row-horiziontal-line{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+.wg-table.table-all-category ul.table-title{
+  border-radius: 0px !important;
+  padding:22px !important;
+}
 /*# sourceMappingURL=style.css.map */
