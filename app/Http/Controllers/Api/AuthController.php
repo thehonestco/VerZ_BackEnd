@@ -27,7 +27,7 @@ class AuthController extends Controller
 
             // Check if the user has the role of "customer" (role_id 3) or "driver" (role_id 4)
             if (in_array($user->role_id, [3, 4])) {
-                $token = $user->createToken('LaravelSanctumAuth')->plainTextToken;
+                $token = $user->createToken('VerZ')->plainTextToken;
 
                 return response()->json([
                     'token' => $token,
