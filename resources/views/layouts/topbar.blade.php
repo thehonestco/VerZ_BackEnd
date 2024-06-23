@@ -104,7 +104,7 @@
                             </span>
                             <span class="flex flex-column">
                                 <span class="body-title mb-2">{{ Auth::user()->name }}</span>
-                                <span class="text-tiny text-capitalize">{{ Auth::user()->getRoleNames()->first() }}</span>
+                                <span class="text-tiny text-capitalize">{{ Auth::user()->role->name }}</span>
                             </span>
                         </span>
                     </button>
