@@ -38,7 +38,7 @@
                             </a>
                         </li>
                         <li class="sub-menu-item">
-                            <a href="product-list.html" class="">
+                            <a href="{{route('superadmin.store-admin.index')}}" class="">
                                 <div class="text">Store Admin</div>
                             </a>
                         </li>

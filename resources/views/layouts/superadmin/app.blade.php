@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="{{ asset('icon/style.css') }}">
     <link rel="shortcut icon" href="{{ asset('images/favicon.png') }}">
     <link rel="apple-touch-icon-precomposed" href="{{ asset('images/favicon.png') }}">
+    <link href="{{ asset('plugins/select2/css/select2.min.css') }}" rel="stylesheet" />
     @yield('style')
 </head>
 <body class="body">
@@ -54,6 +55,14 @@
     <!-- <script src="{{ asset('js/switcher.js') }}"></script> -->
     <script src="{{ asset('js/theme-settings.js') }}"></script>
     <script src="{{ asset('js/main.js') }}"></script>
+    <script src="{{ asset('plugins/select2/js/select2.min.js') }}"></script>
+    <script>
+        $(document).ready(function() {
+            $('.js-example-basic-multiple').select2({
+                allowClear: true
+            });
+        });
+    </script>
     @yield('script')
 </body>
 </html>

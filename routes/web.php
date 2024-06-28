@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\DashboardController as AdminDashboardController;
 use App\Http\Controllers\Admin\StoreController as AdminStoreController;
 use App\Http\Controllers\Store\DashboardController as StoreDashboardController;
+use App\Http\Controllers\Admin\StoreAdminController;
 
 Route::get('/', function () {
     return redirect('/login');
@@ -21,6 +22,8 @@ Route::middleware(['isSuperAdmin'])->group(function () {
 
     // Store
     Route::resource('/superadmin/store', AdminStoreController::class)->names('superadmin.store');
+    Route::resource('/superadmin/store-admin', StoreAdminController::class)->names('superadmin.store-admin');
+
 
 });
 

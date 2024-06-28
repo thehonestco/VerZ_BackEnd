@@ -10,7 +10,7 @@ class Community extends Model
     use HasFactory;
 
 	protected $table = "communities";
-    
+
     protected $fillable = [
         'splcode',
 		'type',
@@ -18,7 +18,7 @@ class Community extends Model
 		'nickname',
 		'status'
     ];
-	
+
 	public function users(): BelongsToMany
     {
         return $this->belongsToMany('App\Models\User');
