@@ -51,7 +51,7 @@
                 </li>
 
                 <li class="menu-item">
-                    <a href="javascript:void(0);" class="menu-item-button">
+                    <a href="{{route('superadmin.customer.index')}}" class="menu-item-button">
                         <div class="icon"><i class="icon-shopping-cart"></i></div>
                         <div class="text">Customers</div>
                     </a>

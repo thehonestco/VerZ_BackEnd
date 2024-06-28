@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\DashboardController as AdminDashboardController;
 use App\Http\Controllers\Admin\StoreController as AdminStoreController;
+use App\Http\Controllers\Admin\CustomerController as AdminCustomerController;
 use App\Http\Controllers\Store\DashboardController as StoreDashboardController;
 
 Route::get('/', function () {
@@ -21,6 +22,9 @@ Route::middleware(['isSuperAdmin'])->group(function () {
 
     // Store
     Route::resource('/superadmin/store', AdminStoreController::class)->names('superadmin.store');
+	
+	// Customer
+    Route::resource('/superadmin/customers', AdminCustomerController::class)->names('superadmin.customer');
 
 });
 
