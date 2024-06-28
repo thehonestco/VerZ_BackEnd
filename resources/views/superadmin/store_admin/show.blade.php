@@ -66,6 +66,14 @@
 										<div class="body-title mb-10">SPL Code </div>
 										<div class="body-text">{{$user->splcode}}</div>
 									</fieldset>
+                                    <fieldset class="description mb-24 ">
+										<div class="body-title mb-10 w-20">Stores </div>
+                                        <div class="body-text d-flex">
+                                            @foreach ($user->stores as $store)
+                                               <p class="m-2"> {{$store->name}},</p>
+                                            @endforeach
+                                        </div>
+									</fieldset>
 									<fieldset class="description mb-24">
 										<div class="body-title mb-10">Status </div>
 										<div class="body-text @if($user->status == 1) block-available @else block-pending @endif">{{$user->status == 1 ? 'Active' : 'Inactive'}}</div>
