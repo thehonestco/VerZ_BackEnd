@@ -27,6 +27,7 @@ Route::middleware(['isSuperAdmin'])->group(function () {
 	// Customer
     Route::resource('/superadmin/customers', AdminCustomerController::class)->names('superadmin.customer');
 
+    // store admin
     Route::resource('/superadmin/store-admin', StoreAdminController::class)->names('superadmin.store-admin');
 
 });
