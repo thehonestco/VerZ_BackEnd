@@ -61,4 +61,8 @@ class User extends Authenticatable
     {
         return $this->belongsTo('App\Models\Role', 'id');
     }
+    public function stores()
+    {
+        return $this->belongsToMany(Store::class);
+    }
 }

@@ -5,6 +5,7 @@ use App\Http\Controllers\Admin\DashboardController as AdminDashboardController;
 use App\Http\Controllers\Admin\StoreController as AdminStoreController;
 use App\Http\Controllers\Admin\CustomerController as AdminCustomerController;
 use App\Http\Controllers\Store\DashboardController as StoreDashboardController;
+use App\Http\Controllers\Admin\StoreAdminController;
 
 Route::get('/', function () {
     return redirect('/login');
@@ -25,6 +26,8 @@ Route::middleware(['isSuperAdmin'])->group(function () {
 	
 	// Customer
     Route::resource('/superadmin/customers', AdminCustomerController::class)->names('superadmin.customer');
+
+    Route::resource('/superadmin/store-admin', StoreAdminController::class)->names('superadmin.store-admin');
 
 });
 
