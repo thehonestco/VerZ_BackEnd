@@ -15,10 +15,10 @@ class DatabaseSeeder extends Seeder
     public function run(): void
     {
         // CREATE ROLES
-		Role::create(['name' => 'Super Admin']);
-		Role::create(['name' => 'Store Admin']);
-		Role::create(['name' => 'Customer']);
-		Role::create(['name' => 'Driver']);
+		Role::create(['name' => 'Super Admin', 'guard_name' => 'superadmin']);
+		Role::create(['name' => 'Store Admin', 'guard_name' => 'storeadmin']);
+		Role::create(['name' => 'Customer', 'guard_name' => 'customer']);
+		Role::create(['name' => 'Driver', 'guard_name' => 'driver']);
 
 		// CREATE USERS
         User::factory()->create([
