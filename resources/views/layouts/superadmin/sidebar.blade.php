@@ -6,7 +6,7 @@
 <div class="section-menu-left">
     <div class="box-logo">
         <a href="" id="site-logo-inner">
-            <img src="{{asset('images/logo/logo.png')}}">
+            <img src="{{asset('images/logo/logo.png')}}" width="70%">
         </a>
         <div class="button-show-hide">
             <i class="icon-menu-left"></i>
