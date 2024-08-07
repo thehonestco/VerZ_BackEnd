@@ -16,11 +16,16 @@ class Community extends Model
 		'type',
 		'name',
 		'nickname',
-		'status'
+		'status',
+        'admin_id'
     ];
 
-	public function users(): BelongsToMany
+	public function users()
     {
         return $this->belongsToMany('App\Models\User');
+    }
+    public function admin()
+    {
+        return $this->belongsTo(User::class ,'admin_id','id');
     }
 }

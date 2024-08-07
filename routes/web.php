@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\CommunityController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\DashboardController as AdminDashboardController;
 use App\Http\Controllers\Admin\StoreController as AdminStoreController;
@@ -23,6 +24,7 @@ Route::middleware(['isSuperAdmin'])->group(function () {
     // Store
     Route::resource('/superadmin/store', AdminStoreController::class)->names('superadmin.store');
     Route::resource('/superadmin/store-admin', StoreAdminController::class)->names('superadmin.store-admin');
+    Route::resource('/community', CommunityController::class)->names('superadmin.community');
 
 
 });

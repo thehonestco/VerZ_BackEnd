@@ -16,6 +16,9 @@
     <link rel="shortcut icon" href="{{ asset('images/favicon.png') }}">
     <link rel="apple-touch-icon-precomposed" href="{{ asset('images/favicon.png') }}">
     <link href="{{ asset('plugins/select2/css/select2.min.css') }}" rel="stylesheet" />
+    <link href="{{ asset('plugins/select2/css/select2.css') }}" rel="stylesheet" />
+    <link href="{{ asset('plugins/select2_bootstrap/css/select2-bootstrap4.min.css') }}" rel="stylesheet" />
+
     @yield('style')
 </head>
 <body class="body">

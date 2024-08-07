@@ -95,7 +95,7 @@
                     </a>
                     <ul class="sub-menu">
                         <li class="sub-menu-item">
-                            <a href="attributes.html" class="">
+                            <a href="{{route('superadmin.community.index')}}" class="">
                                 <div class="text">Community Management</div>
                             </a>
                         </li>
