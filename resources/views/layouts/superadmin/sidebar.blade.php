@@ -6,7 +6,7 @@
 <div class="section-menu-left">
     <div class="box-logo">
         <a href="" id="site-logo-inner">
-            <img src="{{asset('images/logo/logo.png')}}">
+            <img src="{{asset('images/logo/logo.png')}}" width="70%">
         </a>
         <div class="button-show-hide">
             <i class="icon-menu-left"></i>
@@ -51,7 +51,7 @@
                 </li>
 
                 <li class="menu-item">
-                    <a href="javascript:void(0);" class="menu-item-button">
+                    <a href="{{route('superadmin.customer.index')}}" class="menu-item-button">
                         <div class="icon"><i class="icon-shopping-cart"></i></div>
                         <div class="text">Customers</div>
                     </a>

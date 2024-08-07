@@ -1,5 +1,5 @@
 :root {
-  --Main: #2275fc;
+  --Main: #00948d;
   --White: #fff;
   --Black: #111;
   --Heading: #111;
@@ -3757,7 +3757,7 @@ select.h40 {
   display: block;
 }
 .layout-wrap .section-menu-left > .center .center-item .menu-list .menu-item:not(.has-children).active {
-  background-color: rgba(35, 119, 252, 0.1);
+  background-color: rgba(0, 148, 141, 0.1);
   border-radius: 12px;
 }
 .layout-wrap .section-menu-left a {

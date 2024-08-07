@@ -31,7 +31,7 @@ class User extends Authenticatable
 		'dob',
 		'gender',  // 1 - Male, 2 - Female, 3 - Others
 		'address',
-		'status'
+		'status' // 1- Active, 0- Inactive
     ];
 
     /**
